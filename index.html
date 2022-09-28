@@ -25,20 +25,21 @@
     <header class="header">
         <div class="container">
             <div class="container-header">
-            <nav class="nav-sait">
-                <a class="logo link" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
-                <ul class="nav list">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Студія</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a> </li>
-                </ul>
-            </nav>
-            <div class="heder-conect">
-                <ul class="nav list">
-                    <li><a class="link contacts nav-link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-                    <li><a class="link contacts nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                </ul>
-            </div>
+                <nav class="nav-sait">
+                    <a class="logo link" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
+                    <ul class="nav list">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Студія</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакти</a> </li>
+                    </ul>
+                </nav>
+                <div class="heder-conect">
+                    <ul class="nav list">
+                        <li><a class="link contacts nav-link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                        <li><a class="link contacts nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -47,8 +48,10 @@
         <!------------------ section Hero------------------->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <div class=" hero-content">
+                    <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="hero-button" type="button">Замовити послугу</button>
+                </div>
             </div>
         </section>
         <!---------------------section benefits ------------------->
@@ -103,13 +106,55 @@
                         <div class="card">
                             <h3 class="team-user-name">Ігор Дем'яненко</h3>
                             <p class="team-user">Product Designer</p>
+                            <!-- список соц мереж -->
+                            <div class="team-soc">
+                                <ul class="team-soc-list">
+                                    <li class="team-soc-item">
+                                        <a class="team-soc-link" href="#">
+                                            <svg class="team-soc-icon" with="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-soc-item">
+                                        <a class="team-soc-link" href="#">
+                                            <svg class="team-soc-icon" with="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-soc-item">
+                                        <a class="team-soc-link" href="#">
+                                            <svg class="team-soc-icon" with="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-soc-item">
+                                        <a class="team-soc-link" href="#">
+                                            <svg class="team-soc-icon" with="20" height="20">
+                                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                     </li>
                     <li>
                         <img class="card-img" src="./images/foto2.jpg" alt="фото-розробника" width="270">
                         <div class="card">
                             <h3 class="team-user-name">Ольга Рєпіна</h3>
                             <p class="team-user">Frontend Developerp</p>
+                            <div class="team-soc">
+                                <ul class="team-soc-list">
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -117,6 +162,14 @@
                         <div class="card">
                             <h3 class="team-user-name">Микола Тарасов</h3>
                             <p class="team-user">Marketing</p>
+                            <div class="team-soc">
+                                <ul class="team-soc-list">
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -124,8 +177,30 @@
                         <div class="card">
                             <h3 class="team-user-name">Михайло Єрмаков</h3>
                             <p class="team-user">UI Designer</p>
+                            <div class="team-soc">
+                                <ul class="team-soc-list">
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                    <li class="team-soc-item"><a class="team-soc-link" href="#">in</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
+                </ul>
+            </div>
+        </section>
+        <!----------------------- Постійні кліенти client -->
+        <section class="section">
+            <div class="container">
+                <h2 class="client-title">Постійні кліенти</h2>
+                <ul class=" client list">
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
+                    <li><img src="./images/box1.jpg" alt="" width="170"></li>
                 </ul>
             </div>
         </section>
