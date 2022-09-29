@@ -90,7 +90,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 
 .section {
@@ -143,6 +143,7 @@ img {
 
 .nav.list {
     display: flex;
+    align-items: center;
     gap: 50px;
 
 }
@@ -163,7 +164,38 @@ img {
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    outline: 2px solid green;
+    color: #757575;
+    background-size: contain;
+
+}
+
+
+/*  добавила через стили. а теба ЯК SVG тоді
+треба видалити  класи tel та mail??
+ а також  треба Розміри іконок ставте в html */
+/* 
+
+/* .contacts.mail::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    margin-right: 10px;
+    background-image: url(/images/icon/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+} */
+.contacts-mail {
+    margin-right: 10px;
+
+    fill: var(--primary-text-color);
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus {
+    fill: var(--acсent-backgroud);
 }
 
 .current {
@@ -171,6 +203,8 @@ img {
 }
 
 /* ----------------------------Hero-------------------- */
+
+
 
 .hero {
     margin: 0 auto;
@@ -220,11 +254,46 @@ img {
 .benefits-list {
     justify-content: center;
     width: 270px;
-
 }
 
 .benefits-list:not(:last-child) {
     margin-right: 30px;
+}
+
+.benefits-list::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-size: avto;
+}
+
+/* каждой  li своя картинка
+ можно двумя способами*/
+/* либо чере nth-child(1) nth-child(2) */
+/* .benefits-list:nth-child(1)::before { 
+ background-image: url(/images/icon/smartphone.svg);
+} */
+
+/*  или через доп клас */
+.icon-detail::before {
+    background-image: url(/images/icon/antenna.svg);
+}
+
+.icon-punctuality::before {
+    background-image: url(/images/icon/clock.svg);
+}
+
+.icon-time::before {
+    background-image: url(/images/icon/diagram.svg);
+}
+
+.icon-tech::before {
+    background-image: url(/images/icon/astronaut.svg);
 }
 
 .benefits-title {
@@ -245,7 +314,8 @@ img {
 
 /* -------------заголовок h2 для about  та team---------------- */
 .about-title,
-.team-title, .client-title {
+.team-title,
+.client-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -280,7 +350,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding: 30px 0px;
-    outline: 5px solid darkblue;
+
 
 }
 
@@ -304,12 +374,10 @@ img {
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 16px;
-
 }
 
-.team-soc {
-    outline: 1px solid green;
-}
+/* .team-soc {
+    /* outline: 1px solid green; */
 
 .team-soc-list {
     display: flex;
@@ -318,7 +386,7 @@ img {
 }
 
 .team-soc-item {
-    outline: 1px solid fuchsia;
+    color: #AFB1B8;
 }
 
 .team-soc-link {
@@ -326,34 +394,49 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: var(--primary-background-color);
-    /* background-color: chartreuse; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: #AFB1B8;  */
-    /* передаем колір через fill */
-    fill: #AFB1B8;
-}
-
-/* .team-soc-icon {
     fill: currentColor;
-} як шо через fill то це не потрібно */
+    /* передаем колір через fill от
+    .team-soc-item  до  team-soc-link */
+}
 
 .team-soc-link:hover,
 .team-soc-link:focus {
     /* на білом підсв синім   */
-    /* background-color: var(--acсent-backgroud);
-    color: var(--accent-text); */
-    background-color: teal;
-    color: blueviolet;
+    background-color: var(--acсent-backgroud);
+    color: var(--accent-text);
 }
 
 /* ---------------------- Постійні кліенти client --> */
+
 .client.list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-size: cover;
 }
+
+.client-item {
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+    /* на білом підсв синім   */
+    color: var(--acсent-backgroud);
+}
+
 /* --------------------------footer------- */
 .footer {
     margin: 0 auto;
@@ -379,8 +462,10 @@ img {
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text);
-
+    outline: 4px solid firebrick;
 }
+
+
 
 .address-link {
     font-style: normal;
@@ -390,17 +475,53 @@ img {
 }
 
 .container-address {
+    display: block;
     margin-bottom: 9px;
+    outline: 3px solid gold;
 }
 
 
 .container-contacts {
+    display: block;
     margin-bottom: 9px;
+    outline: 3px solid #2196F3;
 }
 
 .foot-contacts {
     color: rgba(255, 255, 255, 0.6);
+
 }
+
+.add {
+    display: block;
+    outline: 3px solid green;
+}
+
+.add-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--accent-text);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.foot {
+    outline: 3px solid slateblue;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------portfolio--------------- */
 .btn-container {
