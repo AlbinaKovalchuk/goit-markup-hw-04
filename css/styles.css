@@ -511,17 +511,7 @@ img {
     outline: 3px solid slateblue;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
+.cont-footer{display: flex;}
 
 /* ----------------------------portfolio--------------- */
 .btn-container {
