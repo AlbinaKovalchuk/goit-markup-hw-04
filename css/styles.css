@@ -395,7 +395,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .client-item {
@@ -454,7 +453,6 @@ img {
     width: 145px;
     margin-bottom: 20px;
     color: var(--accent-text);
-
 }
 
 .container-address {
