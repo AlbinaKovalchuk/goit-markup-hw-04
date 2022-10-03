@@ -195,7 +195,7 @@ img {
 
 /* ----------------------------Hero-------------------- */
 .hero {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 200px 0px;
     background: var(--secondary-background-color);
@@ -256,19 +256,19 @@ img {
 }
 
 .icon-detail::before {
-    background-image: url(/images/icon/antenna.svg);
+    background-image: url(../images/icon/antenna.svg);
 }
 
 .icon-punctuality::before {
-    background-image: url(/images/icon/clock.svg);
+    background-image: url(../images/icon/clock.svg);
 }
 
 .icon-time::before {
-    background-image: url(/images/icon/diagram.svg);
+    background-image: url(../images/icon/diagram.svg);
 }
 
 .icon-tech::before {
-    background-image: url(/images/icon/astronaut.svg);
+    background-image: url(../images/icon/astronaut.svg);
 }
 
 /*----- заголовок h3---- */
@@ -306,20 +306,18 @@ img {
     padding-top: 0px;
 }
 
-.about {
+.about { display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 /* ----------------------------team------------------ */
-.team {
+.team {gap: 30px;
     background-color: var(--background-color);
 }
 
 .card-item {
     max-width: 270px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 30px;
     background: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -391,17 +389,23 @@ img {
 
 /* ---------------------- Постійні кліенти client --> */
 
-.client.list {
+.client {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .client-item {
-    color: #AFB1B8;
+    width: 170px;
+    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
+}
+/* color: #AFB1B8;
+        padding: 16px 32px; */
+.client-link {
+    color: #AFB1B8;
 }
 
 .client-link {
@@ -425,7 +429,7 @@ img {
 
 /* --------------------------footer------- */
 .footer {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -549,7 +553,7 @@ img {
 
 .products-card-item:hover,
 .products-card-item:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products-text {
