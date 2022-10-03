@@ -306,12 +306,13 @@ img {
     padding-top: 0px;
 }
 
-.about { display: flex;
-    align-items: center;
+.about {
+    gap: 30px;
 }
 
 /* ----------------------------team------------------ */
-.team {gap: 30px;
+.team {
+    gap: 30px;
     background-color: var(--background-color);
 }
 
@@ -389,42 +390,37 @@ img {
 
 /* ---------------------- Постійні кліенти client --> */
 
-.client {
-    display: flex;
-    align-items: center;
+.client.list {
     justify-content: space-between;
     text-align: center;
 }
 
 .client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-/* color: #AFB1B8;
-        padding: 16px 32px; */
+
 .client-link {
     color: #AFB1B8;
-}
-
-.client-link {
     fill: currentColor;
-}
-
-.client-link:hover,
-.client-link:focus {
-    /* на білом підсв синім   */
-    color: var(--acсent-backgroud);
 }
 
 
 .client-item:hover,
 .client-item:focus {
-    /* на білом підсв синім   */
-    color: var(--acсent-backgroud);
-    border: 1px solid var(--acсent-backgroud);
+    border-color: #2196F3;
 }
+
+.client-link:hover,
+.client-link:focus {
+    fill: #2196F3;
+}
+
 
 
 /* --------------------------footer------- */
