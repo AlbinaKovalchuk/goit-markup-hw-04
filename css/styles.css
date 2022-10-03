@@ -395,7 +395,7 @@ img {
     text-align: center;
 }
 
-.client-item {
+.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,24 +403,18 @@ img {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-.client-link {
     color: #AFB1B8;
-    fill: currentColor;
 }
 
-
-.client-item:hover,
-.client-item:focus {
-    border-color: #2196F3;
+.client-icon {
+    fill: currentColor;
 }
 
 .client-link:hover,
 .client-link:focus {
-    fill: #2196F3;
+    border-color: var(--acсent-backgroud);
+    color: var(--acсent-backgroud);
 }
-
 
 
 /* --------------------------footer------- */
